@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Table, ClipboardList } from 'lucide-react';
+import {  ClipboardList } from 'lucide-react';
 
 interface Toy {
   id: number;
