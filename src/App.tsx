@@ -6,6 +6,7 @@ import ToyList from './components/ToyList';
 import UploadToy from './components/UploadToy';
 import AdminPage from './components/AdminPage';
 import { AuthProvider } from './context/AuthContext';
+import { ProfileForm } from './components/Profile';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Routes>
               <Route path="/" element={<ToyList />} />
               <Route path="/login" element={<Login />} />
+              <Route path="/register" element={<ProfileForm />} />
               <Route path="/upload" element={<UploadToy />} />
               <Route path="/admin" element={<AdminPage />} />
             </Routes>

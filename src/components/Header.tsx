@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { Gift, Upload, LogIn, LogOut, Settings } from 'lucide-react';
+import { Gift, Upload, LogIn, LogOut, Settings, Signpost } from 'lucide-react';
 
 const Header: React.FC = () => {
   const { isAuthenticated, logout } = useAuth();
@@ -17,6 +17,9 @@ const Header: React.FC = () => {
             <li>
               <Link to="/" className="hover:text-blue-200">Home</Link>
             </li>
+            <Link to="/register" className="hover:text-blue-200 flex items-center">
+                  <Signpost className="mr-1" size={18} /> Register
+            </Link>
             {isAuthenticated ? (
               <>
                 <li>
