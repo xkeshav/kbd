@@ -29,6 +29,7 @@
 		"peacock.color": "#78564a",
 		"cSpell.words": [
 			"shadcn"
-		]
+		],
+		"git.pullBeforeCheckout": true
 	}
 }
